@@ -10,6 +10,11 @@ const replaceAllButton = document.querySelector(".replace-all-button")
 // this array.
 const rowElements = document.querySelectorAll(".row")
 
+for (let i = 0; i < rowElements.length; i++) {
+    let cellEllements = getCellElements (rowElements[i])
+    console.log(cellElements[0])
+}
+
 // When you call the function belwo, it will get and return an INNER ARRAY
 // containing the cell elements for a given row.
 // Call this function from WITHIN your row elements loop. Then you will, in turn,
